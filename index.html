@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <title>Inicio | JA-D</title>
+
+    <link rel="canonical" href="historyBS.html/docs/5.1/examples/carousel/" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Messenger Plugin de chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin de chat codee -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+    <script>
+      var chatbox = document.getElementById("fb-customer-chat");
+      chatbox.setAttribute("page_id", "103518422238274");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v12.0",
+        });
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">JA</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#marketing" class="nav-link">Historia</a>
+              </li>
+              <li class="nav-item">
+                <a href="#video-bootstrap" class="nav-link">Video</a>
+              </li>
+              <li class="nav-item">
+                <a href="#page-bootstrap" class="nav-link"
+                  >Página sobre Bootstrap</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a href="form.html" class="nav-link">Registro</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Buscar
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active"
+            style="background: url(img/World\ Map.svg)"
+          >
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Ejemplo Carousel.</h1>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugit ducimus laboriosam, atque nisi id nostrum doloremque
+                  ipsum.
+                </p>
+                <!-- <p>
+                  <a class="btn btn-lg btn-primary" href="#">Sign up today</a>
+                </p> -->
+              </div>
+            </div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background: url(img/World\ Map.svg)"
+          >
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Otro ejemplo de Carousel.</h1>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugit ducimus laboriosam, atque nisi id nostrum doloremque
+                  ipsum.
+                </p>
+                <!-- <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p> -->
+              </div>
+            </div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background: url(img/World\ Map.svg)"
+          >
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>Otro ejemplo de Carousel.</h1>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugit ducimus laboriosam, atque nisi id nostrum doloremque
+                  ipsum.
+                </p>
+                <!-- <p>
+                  <a class="btn btn-lg btn-primary" href="#">Browse gallery</a>
+                </p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Marketing messaging and featurettes
+  ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <div class="container marketing" id="marketing">
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="img/bootstrap-logo.png" class="img-thumbnail" alt="..." />
+
+            <h2>Bootstrap</h2>
+            <p>
+              Conoce acerca de la historia de Bootstrap y como comenzar con este
+              asombroso framework de CSS, el cual brinda una grandiosa
+              apariencia a tu sitio web.
+            </p>
+            <p>
+              <a class="btn btn-secondary" href="historyBS.html"
+                >Ver detalles &raquo;</a
+              >
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img src="img/bootstrap-logo.png" class="img-thumbnail" alt="..." />
+
+            <h2>Bootstrap</h2>
+            <p>
+              Conoce acerca de la historia de Bootstrap y como comenzar con este
+              asombroso framework de CSS, el cual brinda una grandiosa
+              apariencia a tu sitio web.
+            </p>
+            <p>
+              <a class="btn btn-secondary" href="historyBS.html"
+                >Ver detalles &raquo;</a
+              >
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img src="img/bootstrap-logo.png" class="img-thumbnail" alt="..." />
+
+            <h2>Bootstrap</h2>
+            <p>
+              Conoce acerca de la historia de Bootstrap y como comenzar con este
+              asombroso framework de CSS, el cual brinda una grandiosa
+              apariencia a tu sitio web.
+            </p>
+            <p>
+              <a class="btn btn-secondary" href="historyBS.html"
+                >Ver detalles &raquo;</a
+              >
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+        </div>
+        <!-- /.row -->
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider" id="video-bootstrap" />
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">
+              Video de explicación sobre bootstrap.
+              <span class="text-muted">Esperemos que te ayude.</span>
+            </h2>
+            <p class="lead">
+              Un gran contenido para marcar tu conocimiento sobre bootstrap.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/1kNwZbRiVcQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <br />
+
+        <hr class="featurette-divider" id="page-bootstrap" />
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">
+              Es tan bueno. Ver por ti mismo.
+              <span class="text-muted">Miralo tú mismo.</span>
+            </h2>
+            <p class="lead">
+              Aquí se encuentra una página sobre Bootstrap, para que vayas
+              relacionandote con esta asombrosa herramienta de diseño.
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <iframe
+              width="100%"
+              height="500"
+              src="historyBS.html"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+
+        <hr class="featurette-divider" id="contact" />
+
+        <!-- <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">
+              And lastly, this one. <span class="text-muted">Checkmate.</span>
+            </h2>
+            <p class="lead">
+              And yes, this is the last block of representative placeholder
+              content. Again, not really intended to be actually read, simply
+              here to give you a better view of what this would look like with
+              some actual content. Your content.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <svg
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+              width="500"
+              height="500"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder: 500x500"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#eee" />
+              <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+            </svg>
+          </div>
+        </div> -->
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Correo electronico</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="josueaguilar@example.com"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Comentarios</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+        </div>
+        <hr class="featurette-divider" />
+
+        <!-- /END THE FEATURETTES -->
+      </div>
+      <!-- /.container -->
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-end"><a href="#">Volver al inicio</a></p>
+        <p>&copy; 2021 Josue Aguilar &middot; Bootstrap-Design</p>
+      </footer>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

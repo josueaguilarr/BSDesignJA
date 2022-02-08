@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <title>Inicio | JA-D</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/headers/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/headers.css" rel="stylesheet" />
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">JA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#marketing" class="nav-link disabled">Notas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#video-bootstrap" class="nav-link disabled">Video</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#page-bootstrap" class="nav-link disabled">Página oficial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link disabled">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="form.html" class="nav-link active">Registro</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">
+                            Buscar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="b-example-divider" id="get-bootstrap"></div><br><br>
+        <div class="container-fluid pb-3">
+            <div class="d-grid gap-3" style="grid-template-columns: 2fr;">
+                <!-- <div class="bg-light border rounded-3" style="max-height: 300px;">
+                    
+                </div> -->
+
+                <div class="bg-light border rounded-3" style="max-width: 70%; margin:auto;">
+                    <h2 style="text-align: center; padding-top:1rem;">
+                        Registro de estudiantes
+                        <small class="text-muted">UT</small>
+                    </h2>
+                    <div style="margin-left: 10px; margin-right: 10px; padding-top: 2.5rem;">
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="col-md-4">
+                                <label for="validationCustom01" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="validationCustom01" value="" placeholder="Josue" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationCustom02" class="form-label">Apellido Paterno</label>
+                                <input type="text" class="form-control" id="validationCustom02" value="" placeholder="Aguilar" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationCustom02" class="form-label">Apellido Materno</label>
+                                <input type="text" class="form-control" id="validationCustom02" value="" placeholder="Guerrero" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationCustomUsername" class="form-label">Correo electronico</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                    <input type="text" class="form-control" id="validationCustomUsername"
+                                        aria-describedby="inputGroupPrepend" placeholder="josueaguilar@example.com" required>
+                                    <div class="invalid-feedback">
+                                        Please choose a email.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationCustom03" class="form-label">RFC</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid RFC.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label" for="invalidCheck">
+                                        De acuerdo con terminos y condiciones
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        You must agree before submitting.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary" style="margin-bottom: 1em;" type="submit">Registrarme</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="container">
+            <hr class="featurette-divider" />
+            <p class="float-end"><a href="#">Volver al inicio</a></p>
+            <p>
+                &copy; 2021 Josue Aguilar &middot; Bootstrap-Design
+            </p>
+        </footer>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
