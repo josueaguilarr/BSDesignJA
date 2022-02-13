@@ -1,3 +1,40 @@
+<?php
+    require_once "recaptchalib.php";
+
+    if ( isset($_POST['nombre']) and isset($_POST['apellidop']) and isset($_POST['apellidom'])
+    and isset($_POST['correo']) and isset($_POST['telefono']) and isset($_POST['edad'])
+    and isset($_POST['cp']) and isset($_POST['rfc']) and isset($_POST['curp'])) {
+
+        $secret = "6LfhB3YeAAAAAKDyG7PIeWvCJN6CwzsZmed0-NPv";
+
+        if (isset($_POST['g-recaptcha-response'])) {
+            $captcha = $_POST['g-recaptcha-response']; 
+            $url = 'https://www.google.com/recaptcha/api/siteverify';
+            $data = array(
+            'secret' => $secret,
+            'response' => $captcha,
+            'remoteip' => $_SERVER['REMOTE_ADDR']
+            );}
+        $curlConfig = array(
+            CURLOPT_URL => $url,
+            CURLOPT_POST => true,
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_POSTFIELDS => $data
+        );
+        $ch = curl_init();
+        curl_setopt_array($ch, $curlConfig);
+        $response = curl_exec($ch);
+        curl_close($ch);
+        
+        $jsonResponse = json_decode($response);
+        if ($jsonResponse->success === true) {
+        // Si el código es correcto, seguimos procesando el formulario como siempre 
+        } else { 
+        // Si el código no es válido, lanzamos mensaje de error al usuario 
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -79,7 +116,8 @@
             Registro de estudiantes
             <small class="text-muted">UT</small>
         </h2>
-        <form action="" class="formulario" id="formulario">
+        <script src="https://www.google.com/recaptcha/api.js?hl=es" async defer></script>
+        <form action="validar-form.php" class="formulario" id="formulario" method="POST">
             <!-- Grupo: Nombre -->
             <div class="formulario__grupo" id="grupo__nombre">
                 <label for="nombre" class="formulario__label">Nombre</label>
@@ -187,6 +225,7 @@
                 </label>
             </div>
 
+            <div class="g-recaptcha" data-sitekey="6LfhB3YeAAAAAFqtwxkLg_8Ey1dGNB1JDnCvGFLT"></div>
             <div class="formulario__grupo formulario__grupo-btn-enviar">
                 <button type="button" class="formulario__btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Verificar</button>
             </div>

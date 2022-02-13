@@ -61,6 +61,16 @@ main {
 	display: block;
 }
 
+.formulario__input-correcto {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-correcto-activo {
+	display: block;
+}
+
 .formulario__validacion-estado {
 	position: absolute;
 	right: 10px;

@@ -9,8 +9,8 @@ const restricciones = {
 	telefono: /^\d{10,15}$/, // 10 a 15 numeros.
     edad: /^\d{2}$/, // 2 numeros.
     cp: /^\d{5}$/, // 5 numeros.
-    rfc: /^[A-Z0-9]{13}$/, // 13 numeros
-    curp: /^[A-Z0-9]{18}$/, // 18 numeros
+    rfc: /^[A-Z]{1,1}[AEIOU]{1,1}[A-Z]{2,2}[0-9]{6,6}[0-9A-Z]{3,3}$/, // 13 numeros
+    curp: /^[A-Z]{1,1}[AEIOU]{1,1}[A-Z]{2,2}[0-9]{6,6}[HM]{1,1}(AS|BC|BS|CC|CS|CH|CL|CM|DF|DG|GT|GR|HG|JC|MC|MN|MS|NT|NL|OC|PL|QT|QR|SP|SL|SR|TC|TS|TL|VZ|YN|ZS|NE)[B-DF-HJ-NP-TV-Z]{3,3}[0-9A-Z]{1,1}[0-9]{1,1}$/, // 18 numeros
 }
 
 const datos = {
@@ -86,7 +86,7 @@ formulario.addEventListener('submit', (e) => {
 
 	const terminos = document.getElementById('terminos');
 	if(datos.nombre && datos.apellidop && datos.apellidom && datos.correo && datos.telefono && datos.edad && datos.cp && datos.rfc && datos.curp && terminos.checked ){
-		formulario.reset();
+		//formulario.reset();
 
 		document.getElementById('formulario__mensaje2').classList.add('formulario__mensaje2-activo');
 		setTimeout(() => {
@@ -96,6 +96,7 @@ formulario.addEventListener('submit', (e) => {
 		document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
 			icono.classList.remove('formulario__grupo-correcto');
 		});
+		formulario.submit();
 	} else {
 		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
         setTimeout(() => {
